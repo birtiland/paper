@@ -13,7 +13,7 @@ case 1:	//问卷，投票
         {
             "paper_id": "UUID",
             "paper_name": "WWW",
-            "last_time": 12345,  //上次答题时间，-1表示不显示
+            "last_time": 12345,  //上次答题时间，0表示不显示
             "paper_type": 0,		//0是问卷，2是投票
         },
         ...
