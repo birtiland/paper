@@ -9,7 +9,7 @@
 case 1:	//问卷，投票
 {
     "status",   //0是失败，1是成功
-    "data":[
+    "data":[    //没有问卷时返回NULL
         {
             "paper_id": "UUID",
             "paper_name": "WWW",
@@ -23,7 +23,7 @@ case 1:	//问卷，投票
 case 2：	//答题
 {
     "status",   //0是失败，1是成功
-    "data":[
+    "data":[    //没有问卷时返回NULL
         {
             "paper_id": "UUID",
             "paper_name": "WWW",
@@ -44,7 +44,7 @@ case 2：	//答题
 }
 {
     "status": 0,   //0是失败，1是成功
-    "data":[
+    "data":[       //没有问卷时返回空数组，注意这里是空数组
         {
             "paper_id": 0,
             "paper_name": "www",
