@@ -1,0 +1,9 @@
+/*
+    注意：以下全部接口都是post方法传递json格式数据
+*/
+//我参与的
+http://23.234.202.117/api/getMyPart
+//我发布的
+http://23.234.202.117/api/getMyPaper
+//发布一个问卷
+http://23.234.202.117/api/createPaper
