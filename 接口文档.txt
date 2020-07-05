@@ -69,7 +69,7 @@ case 2：	//答题
     "time_limit":0,	//答题限时，-1表示不限时长，单位分钟
     "need_check": 0	//是否需要人工批改，请客户端自行判断
     "paper_question":{
-        "single":[
+        "single":[      //没有单选的时候此项为NULL
             {
                 "question",
                 "options":[     //字符串数组
@@ -82,7 +82,7 @@ case 2：	//答题
             },
             ...
         ],
-        "multiple":[
+        "multiple":[    //没有多选的时候此项为NULL
             {
                 "question",
                 "options":[     //字符串数组
@@ -97,7 +97,7 @@ case 2：	//答题
             },
             ...
         ],
-        "blank":[
+        "blank":[       //没有填空的时候此项为NULL
             {
                 "question",
                 "right_answer",     //字符串
