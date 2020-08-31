@@ -13,7 +13,9 @@ case 1:	//问卷，投票
         {
             "paper_id": "UUID",
             "paper_name": "WWW",
-            "last_time": 12345,  //上次答题时间，0表示不显示
+            "last_time": 12345,     //上次答题时间，0表示不显示
+            "start_time": 12345,    //问卷开始时间，问卷状态由客户端判断
+            "end_time": 12345,      //单位是秒的时间戳
             "paper_type": 0,		//0是问卷，2是投票
         },
         ...
@@ -140,7 +142,7 @@ case 2：	//答题
             ...
         ],
     },
-    "random": 0    //0表示题目不乱序，1是乱序
+    "random": 0    //随机类型，0表示不随机，1表示按照题型随机，2表示全部随机
     "times": 0     //答题次数，请在客户端设置默认值1
     "star": 0      //0表示未标星，1表示标星
 }
@@ -181,5 +183,62 @@ case 2：	//答题
     "data": {
         "paper_id": 1,  # 这里是刚刚修改完的paper的id和标星状态 #
         "star": 0       #       0表示未标星，1表示标星        #
+    }
+}
+
+获取一张paper：
+{
+    "paper_id": 1,
+    "user_id": 1
+}
+{
+    "status":0,         //0是失败，1是成功
+    "message": "www",	//这是失败或者某些成功状态下要显示给用户的提示信息
+    "data": {
+        "paper_name": "www",
+        "answer_id": 1,         //这是这张答卷的唯一标识
+        "paper_comment": "www",
+        "written":              //已作答过，0表示新卷子，1表示继续作答
+        "paper_type": 0,
+        "time_limit": 0,	    //答题限时，-1表示不限时长，单位分钟
+        "single": [
+            {
+                "question_id": 1,
+                "question": "www",
+                "options": [
+                    ...
+                ]
+            },
+            ...
+        ],
+        "multiple": [
+            {
+                "question_id": 1,
+                "question": "www",
+                "options": [
+                    ...
+                ]
+            },
+            ...
+        ],
+        "blank": [
+            {
+                "question_id": 1,
+                "question": "www"
+            },
+            ...
+        ],
+        "answers": {        //没有答案时是null
+            "single": [     //整型数组
+                ...
+            ],
+            "mutiple": [    //二维数组
+                [],
+                ...
+            ],
+            "blank": [      //字符串数组
+                ...
+            ]
+        }
     }
 }
