@@ -268,15 +268,28 @@ case 2：	//答题
             },
             ...
         ],
-        "answers": {        //没有答案时是null
-            "single": [     //整型数组
+        "answers": {        //没有答案时(written为0时)，没有此项
+            "single": [
+                {
+                    "question_id": 1,
+                    "answer": 0         //整型，answer的id
+                }
                 ...
             ],
-            "mutiple": [    //二维数组
-                [],
+            "mutiple": [
+                {
+                    "question_id": 1,
+                    "answer": [         //整型数组，answer的id
+                        ...
+                    ]
+                }
                 ...
             ],
-            "blank": [      //字符串数组
+            "blank": [
+                {
+                    "question_id": 1,
+                    "answer": "www"     //字符串，answer的内容
+                }
                 ...
             ]
         }
