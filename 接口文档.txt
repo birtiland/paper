@@ -201,6 +201,7 @@ case 2：	//答题
     "message": "www",	//这是失败或者某些成功状态下要显示给用户的提示信息
     "data": {
         "paper_name": "www",
+        "paper_id": 1,
         "answer_id": 1,         //这是这张答卷的唯一标识
         "paper_comment": "www",
         "written":              //已作答过，0表示新卷子，1表示继续作答
@@ -305,6 +306,7 @@ case 2：	//答题
 提交答案
 {
     "user_id": 1,
+    "paper_id": 1,
     "answer_id": 0,
     "paper_type": 1,
     "submit": 0         //是否提交（指答题提交试卷后不可再次修改），此项在其他类型paper时无用，设为默认值0即可，1表示提交
