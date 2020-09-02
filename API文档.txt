@@ -11,3 +11,5 @@ http://23.234.202.117/api/createPaper
 http://23.234.202.117/api/getStar
 //修改标星状态
 http://23.234.202.117/api/editStar
+//获取一个paper
+http://23.234.202.117/api/getPaper
