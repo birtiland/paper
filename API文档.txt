@@ -13,3 +13,5 @@ http://23.234.202.117/api/getStar
 http://23.234.202.117/api/editStar
 //获取一个paper
 http://23.234.202.117/api/getPaper
+//提交答案
+http://23.234.202.117/api/submit
