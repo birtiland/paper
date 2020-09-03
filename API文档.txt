@@ -17,3 +17,5 @@ http://23.234.202.117/api/getPaper
 http://23.234.202.117/api/submit
 //删除paper
 http://23.234.202.117/api/deletePaper
+//修改paper
+http://23.234.202.117/api/alterPaper
