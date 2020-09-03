@@ -15,3 +15,5 @@ http://23.234.202.117/api/editStar
 http://23.234.202.117/api/getPaper
 //提交答案
 http://23.234.202.117/api/submit
+//删除paper
+http://23.234.202.117/api/deletePaper
