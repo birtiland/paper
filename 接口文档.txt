@@ -338,3 +338,18 @@ case 2：	//答题
     "status": 0,
     "message": "www"
 }
+
+删除paper：
+{
+    "delete_id": 1,     //要删除的paper的id
+    "paper_type": 1
+}
+{
+    "status": 0,
+    "message": "www"
+}
+
+修改paper:    # 这里建议在本地缓存一份，以防数据丢失 #
+{
+    # 这里是"发布paper"和"删除paper"参数的并集
+}
