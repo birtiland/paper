@@ -355,3 +355,21 @@ case 2：	//答题
 {
     # 这里是"发布paper"和"删除paper"参数的并集
 }
+
+停止paper
+{
+    "paper_id": 1
+}
+{
+    "status": 0,
+    "message": "www"
+}
+
+恢复paper状态（和停止相对）
+{
+    "paper_id": 1
+}
+{
+    "status": 0,
+    "message": "www"
+}
