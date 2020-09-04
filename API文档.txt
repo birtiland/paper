@@ -19,3 +19,7 @@ http://23.234.202.117/api/submit
 http://23.234.202.117/api/deletePaper
 //修改paper
 http://23.234.202.117/api/alterPaper
+//停止paper
+http://23.234.202.117/api/stopPaper
+//恢复paper
+http://23.234.202.117/api/restart
