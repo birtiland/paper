@@ -147,7 +147,7 @@ case 2：	//答题
     "random": 0    //随机类型，0表示不随机，1表示按照题型随机，2表示全部随机
     "times": 0     //答题次数，请在客户端设置默认值1
     "star": 0      //0表示未标星，1表示标星
-    "single_number": 1      //单选题抽取数量，默认设置成所有单选题的个数，下面俩一样，（按题型随机时才有用）
+    "single_number": 1      //单选题抽取数量，默认设置成所有单选题的个数，没有该题型题目时设置成0，下面俩一样，（按题型随机时才有用）
     "multiple_number": 1    //多选题抽取数量
     "blank_number": 1       //填空题抽取数量
     "number": 1     //抽取题目的数量（按题目随机的时候才有用）
@@ -379,72 +379,76 @@ case 2：	//答题
     "paper_id": 1
 }
 {
-    "paper_id": 1,
-    "paper_type": 1,
-    "paper_name": "www",
-    "start_time": 00000000000,
-    "end_time": 00000000000,
-    "paper_comment": "www",
-    "time_limit": 30,
-    "star": 0,
-    "random": 0,
-    "times": 1,
-    "need_check": 1,
-    "create_time": 00000000000,
-    "paper_question": {
-        "single": [
-            {
-                "question_id": 1,
-                "question": "www",
-                "options": [
-                    ...
-                ],
-                "necessary": 1,
-                "right_answer": 0,      //以下三项在答题时才存在
-                "score": 2,
-                "random": 1,
-                "signed": 1,            //以下三项在非答题时才存在
-                "signed_id": 1,
-                "sign": ...
-            }
-            ...
-        ],
-        "multiple": [
-            {
-                "question_id": 1,
-                "question": "www",
-                "options": [
-                    ...
-                ],
-                "necessary": 1,
-                "right_answer": [       //以下三项在答题时才存在
-                    ...
-                ],
-                "score": 2,
-                "random": 1,
-                "signed": 1,            //以下三项在非答题时才存在
-                "signed_id": 1,
-                "sign": ...
-            }
-            ...
-        ],
-        "blank": [
-            {
-                "question_id": 1,
-                "question": "www",
-                "necessary": 1,
-                "right_answer": "www",  //以下两项在答题时才存在
-                "score": 10,
-                "signed": 1,            //以下三项在非答题时才存在
-                "signed_id": 1,
-                "sign": ...
-            }
-            ...
-        ]
-    },
-    # 以下四项在答题且随机时才存在 #
-    "number": 70,               //题目数量(random为2时才存在)
-    "single_number": 1          //单选题抽取数量，默认设置成所有单选题的个数，下面俩一样，（按题型随机时才存在）
-    "multiple_number": 1        //多选题抽取数量
-    "blank_number": 1           //填空题抽取数量
+    "status": 1,
+    "message": "www",
+    "data": {
+        "paper_id": 1,
+        "paper_type": 1,
+        "paper_name": "www",
+        "start_time": 00000000000,
+        "end_time": 00000000000,
+        "paper_comment": "www",
+        "time_limit": 30,
+        "star": 0,
+        "random": 0,
+        "times": 1,
+        "need_check": 1,
+        "create_time": 00000000000,
+        "paper_question": {
+            "single": [
+                {
+                    "question_id": 1,
+                    "question": "www",
+                    "options": [
+                        ...
+                    ],
+                    "necessary": 1,
+                    "right_answer": 0,      //以下三项在答题时才存在
+                    "score": 2,
+                    "random": 1,
+                    "signed": 1,            //以下三项在非答题时才存在
+                    "signed_id": 1,
+                    "sign": ...
+                }
+                ...
+            ],
+            "multiple": [
+                {
+                    "question_id": 1,
+                    "question": "www",
+                    "options": [
+                        ...
+                    ],
+                    "necessary": 1,
+                    "right_answer": [       //以下三项在答题时才存在
+                        ...
+                    ],
+                    "score": 2,
+                    "random": 1,
+                    "signed": 1,            //以下三项在非答题时才存在
+                    "signed_id": 1,
+                    "sign": ...
+                }
+                ...
+            ],
+            "blank": [
+                {
+                    "question_id": 1,
+                    "question": "www",
+                    "necessary": 1,
+                    "right_answer": "www",  //以下两项在答题时才存在
+                    "score": 10,
+                    "signed": 1,            //以下三项在非答题时才存在
+                    "signed_id": 1,
+                    "sign": ...
+                }
+                ...
+            ]
+        },
+        # 以下四项在答题且随机时才存在 #
+        "number": 70,               //题目数量(random为2时才存在)
+        "single_number": 1          //单选题抽取数量，默认设置成所有单选题的个数，下面俩一样，（按题型随机时才存在）
+        "multiple_number": 1        //多选题抽取数量
+        "blank_number": 1           //填空题抽取数量
+    }
 }
